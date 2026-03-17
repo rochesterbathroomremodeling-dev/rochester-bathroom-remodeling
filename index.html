@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A complete bathroom remodeling guide covering modern design trends, renovation planning, waterproofing, tile installation, storage solutions, and lighting tips for homeowners." />
+  <meta name="keywords" content="bathroom remodeling, bathroom renovation, tile installation, waterproofing bathroom, bathroom design trends, small bathroom storage, bathroom layout ideas, modern bathroom" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="HomeRenovate Guide" />
+  <meta property="og:title" content="Bathroom Remodeling Guide & Modern Renovation Ideas" />
+  <meta property="og:description" content="Everything homeowners need to plan, design, and execute a beautiful bathroom renovation — from tile and waterproofing to storage and lighting." />
+  <meta property="og:type" content="article" />
+  <title>Bathroom Remodeling Guide & Modern Renovation Ideas | HomeRenovate</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── Tokens ─────────────────────────────────────────────── */
+    :root {
+      --clay:      #c4a882;
+      --clay-lt:   #f0e8dc;
+      --clay-xlt:  #faf7f3;
+      --stone:     #e5ddd2;
+      --bark:      #7a5c3e;
+      --bark-dk:   #3d2e1e;
+      --ink:       #1e1e1e;
+      --ink-2:     #3a3a3a;
+      --ink-3:     #7a7060;
+      --white:     #ffffff;
+      --moss:      #4a6741;
+      --moss-lt:   #deeada;
+      --rule:      #ddd5c8;
+      --r:         8px;
+      --r-lg:      16px;
+      --sh:        0 4px 24px rgba(60,40,20,.10);
+      --max:       840px;
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'Jost', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--clay-xlt);
+      color: var(--ink-2);
+      line-height: 1.78;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; height: auto; }
+
+    a {
+      color: var(--bark);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      transition: color .2s;
+    }
+    a:hover { color: var(--bark-dk); }
+
+    /* ── Top Bar ─────────────────────────────────────────────── */
+    .topbar {
+      background: var(--bark-dk);
+      color: #a89070;
+      font-family: var(--sans);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 9px 1rem;
+    }
+
+    /* ── Sticky Header ───────────────────────────────────────── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(250,247,243,.96);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .header-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .site-logo {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--ink);
+      text-decoration: none;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+    }
+
+    .site-logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .site-logo img {
+        height: 34px;
+      }
+    }
+
+    .nav-cats {
+      display: flex;
+      align-items: center;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .05em;
+      color: var(--ink-3);
+      gap: 0;
+    }
+
+    .nav-cats a { color: var(--ink-3); text-decoration: none; transition: color .2s; }
+    .nav-cats a:hover { color: var(--bark); }
+    .nav-cats .dot { padding: 0 10px; color: var(--rule); }
+
+    /* ── Hero ────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 500px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      animation: hzoom 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes hzoom {
+      from { transform: scale(1); }
+      to   { transform: scale(1.05); }
+    }
+
+    .hero-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
+        rgba(20,13,8,.88) 0%,
+        rgba(20,13,8,.42) 50%,
+        rgba(20,13,8,.12) 100%);
+    }
+
+    .hero-body {
+      position: relative;
+      z-index: 2;
+      max-width: var(--max);
+      width: 100%;
+      margin: 0 auto;
+      padding: 52px 1.5rem 56px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: var(--sans);
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--clay);
+      margin-bottom: 18px;
+      animation: fadeUp .65s ease both;
+    }
+
+    .eyebrow::before {
+      content: '';
+      width: 26px;
+      height: 1px;
+      background: var(--clay);
+      display: block;
+    }
+
+    .hero-body h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5.5vw, 3.1rem);
+      font-weight: 700;
+      line-height: 1.18;
+      color: #fff;
+      max-width: 620px;
+      margin-bottom: 18px;
+      animation: fadeUp .65s .1s ease both;
+    }
+
+    .hero-desc {
+      font-size: 1.04rem;
+      font-weight: 300;
+      color: rgba(255,255,255,.72);
+      max-width: 520px;
+      line-height: 1.7;
+      animation: fadeUp .65s .2s ease both;
+    }
+
+    .hero-tags {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      animation: fadeUp .65s .3s ease both;
+    }
+
+    .hero-tag {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.78);
+      font-size: .71rem;
+      font-weight: 500;
+      letter-spacing: .07em;
+      padding: 5px 13px;
+      border-radius: 99px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Jump Nav ────────────────────────────────────────────── */
+    .jump-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .jump-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .jump-label {
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      white-space: nowrap;
+    }
+
+    .jump-links { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .jump-links a {
+      font-size: .73rem;
+      font-weight: 500;
+      color: var(--ink-2);
+      text-decoration: none;
+      background: var(--clay-xlt);
+      border: 1px solid var(--rule);
+      padding: 4px 12px;
+      border-radius: 99px;
+      transition: background .18s, color .18s, border-color .18s;
+    }
+
+    .jump-links a:hover {
+      background: var(--clay-lt);
+      border-color: var(--clay);
+      color: var(--bark);
+    }
+
+    /* ── Main Page Wrapper ───────────────────────────────────── */
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 60px 1.5rem 80px;
+    }
+
+    .section { margin-bottom: 60px; }
+
+    /* ── Headings ────────────────────────────────────────────── */
+    h2 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.22;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 44px;
+      height: 2px;
+      background: var(--clay);
+      border-radius: 2px;
+    }
+
+    h3 {
+      font-family: var(--serif);
+      font-size: 1.32rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 30px 0 10px;
+      line-height: 1.3;
+    }
+
+    p { font-size: 1rem; color: var(--ink-2); margin-bottom: 1.15rem; }
+    p:last-child { margin-bottom: 0; }
+
+    .lead {
+      font-family: var(--serif);
+      font-size: 1.22rem;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.7;
+      margin-bottom: 1.3rem;
+    }
+
+    /* ── Pull Quote ──────────────────────────────────────────── */
+    .pull {
+      border-left: 3px solid var(--clay);
+      background: var(--clay-lt);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 14px 22px;
+      margin: 26px 0;
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--bark-dk);
+      line-height: 1.65;
+    }
+
+    /* ── Tip Box ─────────────────────────────────────────────── */
+    .tip {
+      background: var(--moss-lt);
+      border: 1px solid #b4d0b0;
+      border-radius: var(--r);
+      padding: 17px 22px;
+      margin: 24px 0;
+    }
+
+    .tip-head {
+      font-size: .67rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--moss);
+      margin-bottom: 7px;
+    }
+
+    .tip p { font-size: .94rem; color: #2c4629; margin: 0; line-height: 1.65; }
+
+    /* ── Styled List ─────────────────────────────────────────── */
+    ul.list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 22px;
+      border: 1px solid var(--rule);
+      border-radius: var(--r);
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    ul.list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      padding: 13px 18px;
+      border-bottom: 1px solid var(--rule);
+      font-size: .97rem;
+      color: var(--ink-2);
+      line-height: 1.6;
+      transition: background .15s;
+    }
+
+    ul.list li:last-child { border-bottom: none; }
+    ul.list li:hover { background: var(--clay-xlt); }
+
+    ul.list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--clay);
+      margin-top: 7px;
+    }
+
+    /* ── Stat Row ────────────────────────────────────────────── */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 26px 0;
+    }
+
+    .stat {
+      background: var(--bark-dk);
+      border-radius: var(--r);
+      padding: 26px 16px 22px;
+      text-align: center;
+    }
+
+    .stat-n {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--clay);
+      display: block;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-l {
+      font-size: .69rem;
+      font-weight: 500;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: #90786a;
+    }
+
+    /* ── Step Cards ──────────────────────────────────────────── */
+    .steps { display: flex; flex-direction: column; gap: 13px; margin: 20px 0; }
+
+    .step {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--r);
+      padding: 20px 22px;
+      transition: box-shadow .2s, transform .2s;
+    }
+
+    .step:hover { box-shadow: var(--sh); transform: translateX(4px); }
+
+    .step-n {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--clay);
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-body h3 { margin: 0 0 7px; font-size: 1.04rem; }
+    .step-body p  { font-size: .94rem; margin: 0; }
+
+    /* ── Card Grid ───────────────────────────────────────────── */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: var(--r);
+      padding: 22px 20px;
+      transition: box-shadow .2s, transform .2s;
+    }
+
+    .card:hover { box-shadow: var(--sh); transform: translateY(-3px); }
+    .card-icon  { font-size: 1.55rem; margin-bottom: 11px; }
+    .card h3    { margin: 0 0 8px; font-size: 1.02rem; }
+    .card p     { font-size: .88rem; color: var(--ink-3); margin: 0; line-height: 1.65; }
+
+    /* ── FAQ ─────────────────────────────────────────────────── */
+    .faq { margin-top: 18px; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--rule);
+      padding: 22px 0;
+    }
+
+    .faq-item:first-child { border-top: 1px solid var(--rule); }
+
+    .faq-q {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 12px;
+      align-items: start;
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 11px;
+    }
+
+    .q-dot {
+      width: 28px;
+      height: 28px;
+      background: var(--clay);
+      color: var(--white);
+      border-radius: 50%;
+      font-family: var(--sans);
+      font-size: .72rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .faq-a { font-size: .97rem; color: var(--ink-2); padding-left: 40px; }
+
+    /* ── Conclusion ──────────────────────────────────────────── */
+    .conclusion {
+      background: var(--bark-dk);
+      border-radius: var(--r-lg);
+      padding: 44px 40px;
+      margin-top: 60px;
+    }
+
+    .conclusion h2        { color: #fff; }
+    .conclusion h2::after { background: var(--clay); }
+    .conclusion p         { color: #9a8878; }
+    .conclusion p strong  { color: var(--clay); }
+
+    /* ── Author Box ──────────────────────────────────────────── */
+    .author {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: var(--clay-lt);
+      border: 1px solid var(--clay);
+      border-radius: var(--r);
+      padding: 24px 26px;
+      margin-top: 40px;
+    }
+
+    .author-av {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--clay) 0%, var(--bark) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .author-tag {
+      font-size: .67rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--bark);
+      margin-bottom: 6px;
+    }
+
+    .author p { font-size: .91rem; color: var(--bark-dk); margin: 0; line-height: 1.65; }
+
+    /* ── Footer ──────────────────────────────────────────────── */
+    footer {
+      background: var(--bark-dk);
+      color: #5a4838;
+      text-align: center;
+      font-size: .72rem;
+      letter-spacing: .08em;
+      padding: 26px 1rem;
+    }
+
+    footer a { color: #7a6050; }
+    footer a:hover { color: var(--clay); }
+
+    /* ── Responsive ──────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .hero { min-height: 400px; }
+      .hero-body h1 { font-size: 2rem; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .stats .stat:last-child { grid-column: span 2; }
+      .grid { grid-template-columns: 1fr; }
+      .conclusion { padding: 28px 20px; }
+      .author { flex-direction: column; }
+      .nav-cats { display: none; }
+      .step:hover  { transform: none; }
+      .card:hover  { transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="topbar">Homeowner Resource Center &nbsp;·&nbsp; Free Renovation Guides &nbsp;·&nbsp; Trusted Advice</div>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo" aria-label="Rochester Bathroom Remodeling Home">
+        <img src="https://rochesterbathroomremodeling.com/wp-content/uploads/2026/02/cropped-rochester-bathroom-remodeling-logo.webp" alt="Rochester Bathroom Remodeling" loading="eager" />
+      </a>
+      <nav class="nav-cats" aria-label="Site categories">
+        <a href="#">Home Improvement</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="#">Renovation Guides</a>
+        <span class="dot" aria-hidden="true">·</span>
+        <a href="#">Interior Design</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Article hero">
+    <img
+      class="hero-img"
+      src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1600&q=85&auto=format&fit=crop"
+      alt="Modern renovated bathroom featuring white subway tile, a freestanding soaking tub, and warm timber vanity accents"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-body">
+      <div class="eyebrow">Complete Homeowner Guide</div>
+      <h1>Bathroom Remodeling Guide &amp; Modern Renovation Ideas</h1>
+      <p class="hero-desc">A practical, in-depth resource for homeowners planning a bathroom renovation — from layout and waterproofing to tile selection, storage, and design inspiration.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">Tile &amp; Waterproofing</span>
+        <span class="hero-tag">Layout Planning</span>
+        <span class="hero-tag">Design Trends</span>
+        <span class="hero-tag">Storage Ideas</span>
+        <span class="hero-tag">Lighting Tips</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jump Navigation -->
+  <nav class="jump-bar" aria-label="Jump to article section">
+    <div class="jump-inner">
+      <span class="jump-label">Jump to:</span>
+      <div class="jump-links">
+        <a href="#why-remodel">Why Remodel</a>
+        <a href="#trends">Design Trends</a>
+        <a href="#planning">Planning Guide</a>
+        <a href="#storage">Storage Tips</a>
+        <a href="#lighting">Lighting</a>
+        <a href="#faq">FAQ</a>
+        <a href="#conclusion">Conclusion</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page" id="main-content">
+    <article>
+
+      <!-- ── Why Remodel ── -->
+      <section class="section" id="why-remodel" aria-labelledby="h2-why">
+        <h2 id="h2-why">Why Remodel Your Bathroom</h2>
+
+        <p class="lead">Few home improvement projects combine daily quality-of-life impact with long-term financial return as effectively as a bathroom renovation.</p>
+
+        <p>The bathroom is among the most frequently used rooms in any household, and visible deterioration — worn grout, corroded fixtures, cracking tile, or failing waterproofing — is among the first things both occupants and prospective buyers notice. A well-planned remodel addresses these concerns together, creating a space that is structurally sound, functionally improved, and genuinely pleasant to use.</p>
+
+        <p>From a financial perspective, remodeling industry data consistently places mid-range bathroom renovations among the strongest-returning improvement projects available to homeowners. The elements buyers respond to most — tile quality, fixture condition, layout efficiency, and storage adequacy — are precisely what a renovation directly improves.</p>
+
+        <div class="stats" aria-label="Key renovation figures">
+          <div class="stat">
+            <span class="stat-n">67%</span>
+            <span class="stat-l">Average cost recouped at resale</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">$11K</span>
+            <span class="stat-l">Average mid-range project cost</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">3–6 wks</span>
+            <span class="stat-l">Typical project timeline</span>
+          </div>
+        </div>
+
+        <p>Homeowners most commonly remodel for these reasons:</p>
+        <ul class="list">
+          <li>Correcting an inefficient layout that no longer suits the household's daily routine</li>
+          <li>Replacing deteriorated waterproofing before moisture causes structural damage behind the walls</li>
+          <li>Updating tile, fixtures, and finishes that have become functionally or visually outdated</li>
+          <li>Improving storage capacity in an undersized, poorly organised space</li>
+          <li>Installing water-efficient plumbing fixtures to reduce ongoing utility costs</li>
+          <li>Creating a safer, more accessible environment for aging family members or young children</li>
+        </ul>
+      </section>
+
+      <!-- ── Design Trends ── -->
+      <section class="section" id="trends" aria-labelledby="h2-trends">
+        <h2 id="h2-trends">Modern Bathroom Design Trends</h2>
+
+        <p>Bathroom design has shifted significantly over the past decade. The uniformly white, clinically minimal bathroom has given way to spaces that feel warmer, more material-rich, and more personal. Below are the directions shaping contemporary bathroom renovation.</p>
+
+        <div class="grid">
+          <div class="card">
+            <div class="card-icon">🪨</div>
+            <h3>Natural Stone &amp; Warm Neutrals</h3>
+            <p>Travertine, limestone, and porcelain with natural stone veining have displaced glossy white ceramics as the aspirational tile choice. Paired with terracotta, sand, and greige palettes, these materials age gracefully and feel timeless rather than trend-dependent.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚿</div>
+            <h3>Walk-In Showers, Curbless Design</h3>
+            <p>Frameless glass walk-in showers with no step threshold now dominate modern bathroom renovations. They improve accessibility, reduce cleaning effort, and make rooms of any size feel more open and intentional.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🪞</div>
+            <h3>Floating Vanities &amp; Integrated Storage</h3>
+            <p>Wall-mounted vanities create visual floor space and simplify cleaning. When paired with integrated drawer organisation and recessed toe-kick lighting, they contribute to a clean, boutique-hotel aesthetic.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🔲</div>
+            <h3>Statement Tile as Focal Point</h3>
+            <p>Bold geometric patterns, handmade zellige-style tiles, and richly textured surfaces are used strategically — as a shower feature wall or behind a freestanding tub — rather than covering every surface uniformly.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🌿</div>
+            <h3>Biophilic Details</h3>
+            <p>Wood-toned cabinetry, natural fibre accessories, live plants, and organic forms introduce calm, nature-connected warmth that feels restorative rather than merely decorative.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🛁</div>
+            <h3>Spa-Inspired Features</h3>
+            <p>Deep soaking tubs, rainfall showerheads, underfloor heating, and dedicated drying areas transform the primary bathroom into a private wellness retreat without requiring a full structural renovation.</p>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-head">🌱 Design Tip</div>
+          <p>Commit to one dominant surface and let everything else support it. Competing bold patterns on walls, floors, and countertops simultaneously is one of the most expensive design mistakes to correct after installation is complete.</p>
+        </div>
+      </section>
+
+      <!-- ── Planning Guide ── -->
+      <section class="section" id="planning" aria-labelledby="h2-planning">
+        <h2 id="h2-planning">Step-by-Step Renovation Planning Guide</h2>
+
+        <p>The quality of preparation almost always determines the outcome of a bathroom renovation. Projects that begin with a clear scope, locked-in material selections, and a realistic budget consistently run on time and within cost. Projects that begin with vague goals and a demolition date do not.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-n">1</div>
+            <div class="step-body">
+              <h3>Define Scope and Set a Realistic Budget</h3>
+              <p>Identify whether you need a cosmetic refresh, a mid-range renovation with new tile and fixtures, or a full gut renovation involving layout or plumbing changes. These are three distinct projects with very different cost profiles. Set the budget ceiling first, then design to it — reverse-engineering the budget from a wish list is the most reliable path to overspending.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-n">2</div>
+            <div class="step-body">
+              <h3>Evaluate the Existing Layout and Plumbing</h3>
+              <p>Moving plumbing is possible but significantly increases cost and timeline. If the existing layout — drain positions, supply connections, and fixture placement — is fundamentally workable, designing around it rather than relocating it can reduce project costs by 20–40%. A licensed plumber can assess feasibility before any design decisions are finalised.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-n">3</div>
+            <div class="step-body">
+              <h3>Prioritise Waterproofing Before Tile</h3>
+              <p>Waterproofing is the single most important — and most frequently shortcut — step in bathroom tile installation. Tile alone is not a waterproof surface; grout joints and the tile body allow moisture to pass through, particularly in shower enclosures under sustained use. A continuous waterproof membrane applied beneath tile to wet zone walls and floors prevents moisture from reaching the structure, where it causes mould growth, timber rot, and eventual tile delamination. Specify a tanking or sheet-membrane waterproofing system in all wet areas before any tile is installed.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-n">4</div>
+            <div class="step-body">
+              <h3>Select Tile with Performance in Mind</h3>
+              <p>Choose floor tile rated for wet areas with a minimum slip-resistance coefficient of R10 for standard bathroom floors and R11 or higher for curbless shower floors. Porcelain is preferred over ceramic in wet areas due to its lower porosity and greater durability. Large-format tiles reduce grout lines and are easier to maintain but require a precisely levelled substrate. Rectified tiles allow tighter, more refined grout joints and a cleaner finished appearance.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-n">5</div>
+            <div class="step-body">
+              <h3>Hire Qualified Professionals for Technical Work</h3>
+              <p>Waterproofing, tiling, and plumbing work done incorrectly can cause damage that takes years to surface and is far more expensive to remediate than it would have been to do correctly the first time. Obtain multiple written quotes, verify licences and insurance, and review references from recent comparable projects specifically. If you are located in the area, <a href="https://rochesterbathroomremodeling.com/" target="_blank" rel="noopener noreferrer">bathroom remodeling services in Rochester</a> can help homeowners plan layouts, choose materials, and complete renovation projects professionally — with the local knowledge that makes a meaningful difference to both the process and the finished result.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-n">6</div>
+            <div class="step-body">
+              <h3>Build a Contingency and Lock in All Decisions Early</h3>
+              <p>Reserve 15–20% of the total budget as a contingency for unexpected conditions — concealed moisture damage, deteriorated subfloor structure, or outdated plumbing connections — that are common once walls and floors are opened. Finalise every material and fixture selection before demolition begins. Change orders issued mid-project are the single most reliable driver of cost overruns.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pull">
+          The most expensive bathroom renovations are rarely those with the highest-end materials. They are the ones where decisions were changed after work had already begun.
+        </div>
+      </section>
+
+      <!-- ── Storage ── -->
+      <section class="section" id="storage" aria-labelledby="h2-storage">
+        <h2 id="h2-storage">Smart Storage Solutions for Small Bathrooms</h2>
+
+        <p>Limited floor area is one of the most common constraints in bathroom renovation, particularly in older homes. The goal of effective small-bathroom storage design is to maximise capacity without creating a feeling of clutter or compression. The most impactful solutions exploit vertical space, integrate storage into walls during the renovation phase, and select fixtures that serve multiple purposes simultaneously.</p>
+
+        <h3>High-Impact Storage Ideas</h3>
+        <ul class="list">
+          <li><strong>Recessed medicine cabinets</strong> — sit flush with the wall behind the mirror, adding substantial concealed storage without projecting into the room</li>
+          <li><strong>Shower niches</strong> — built into the tile surround during waterproofing and tiling, they eliminate plastic caddies and integrate cleanly into the design</li>
+          <li><strong>Tall linen towers</strong> — narrow, floor-to-ceiling cabinetry exploits vertical height that would otherwise go unused, storing towels, toiletries, and supplies in a compact footprint</li>
+          <li><strong>Under-vanity drawer organisers</strong> — pull-out interior fittings convert awkward under-sink space into genuinely usable, well-organised storage</li>
+          <li><strong>Over-door racks and hooks</strong> — use the back face of the door for towels, robes, and accessories without any wall fixings</li>
+          <li><strong>Mirrored wall cabinets</strong> — combine two bathroom necessities into a single unit, freeing wall space that a separate mirror and cabinet would otherwise require</li>
+        </ul>
+
+        <p>When planning the storage layout, distinguish between items needed daily and those used occasionally. Daily-use items belong within easy reach at counter height; less-frequent items can be stored higher or deeper. This hierarchy keeps the surfaces most visible — and most easily cluttered — clear and calm.</p>
+      </section>
+
+      <!-- ── Lighting ── -->
+      <section class="section" id="lighting" aria-labelledby="h2-lighting">
+        <h2 id="h2-lighting">Lighting Tips for Modern Bathrooms</h2>
+
+        <p>Lighting is consistently the last element considered during bathroom renovation planning and the one with the largest effect on how the finished space actually feels. Poor lighting can make expensive tile appear flat and high-quality fixtures look unremarkable. Thoughtful lighting makes the same materials look their best at every hour of the day.</p>
+
+        <h3>Layer Three Light Sources</h3>
+        <p>Professional designers recommend combining three lighting types in every bathroom: <strong>ambient</strong> (general room illumination), <strong>task</strong> (focused vanity light for grooming), and <strong>accent</strong> (atmospheric or architectural lighting). Relying on a single central ceiling fixture — the most common bathroom lighting arrangement — creates unflattering facial shadows and leaves corners poorly lit.</p>
+
+        <ul class="list">
+          <li><strong>Ambient:</strong> Recessed downlights or a central pendant fixture provide even baseline illumination throughout the room</li>
+          <li><strong>Task:</strong> Wall-mounted sconces flanking the mirror at eye height (approximately 60 inches from floor) deliver the most even, shadow-free light for grooming</li>
+          <li><strong>Accent:</strong> LED strip lighting beneath a floating vanity, above wall cabinetry, or inside a shower niche adds depth and a spa-like quality at low cost</li>
+          <li><strong>Dimmers:</strong> Installing dimmer switches on all circuits provides complete control over atmosphere and significantly reduces energy consumption</li>
+        </ul>
+
+        <h3>Choosing the Right Colour Temperature</h3>
+        <p>Colour temperature — measured in Kelvin — determines whether a space feels warm and relaxing or crisp and clinical. Warm white (2700K–3000K) at the vanity is most flattering for skin tones and the most comfortable for daily use. A slightly cooler temperature (3000K–3500K) for overhead ambient sources provides better visibility without feeling harsh. Avoid mixing very warm and very cool sources in the same space, as the colour conflict is difficult to ignore.</p>
+
+        <div class="tip">
+          <div class="tip-head">💡 Lighting Tip</div>
+          <p>Replace any remaining incandescent or compact fluorescent bulbs with dimmable LED equivalents during renovation. Modern LED bulbs replicate warm incandescent light convincingly, consume up to 80% less energy, and last many times longer — making them the most cost-effective lighting upgrade available at any budget level.</p>
+        </div>
+      </section>
+
+      <!-- ── FAQ ── -->
+      <section class="section" id="faq" aria-labelledby="h2-faq">
+        <h2 id="h2-faq">Frequently Asked Questions</h2>
+
+        <div class="faq">
+          <div class="faq-item">
+            <div class="faq-q">
+              <span class="q-dot" aria-hidden="true">Q</span>
+              <span>How long does a typical bathroom renovation take?</span>
+            </div>
+            <p class="faq-a">A cosmetic update — new paint, fixtures, and hardware — can typically be completed in one to two weeks. A mid-range renovation involving new waterproofing, tile, and a vanity replacement runs three to five weeks. A full gut renovation with plumbing or layout changes can extend to six to ten weeks, depending on scope and contractor availability.</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span class="q-dot" aria-hidden="true">Q</span>
+              <span>Why is waterproofing so important in bathroom renovation?</span>
+            </div>
+            <p class="faq-a">Tile and grout are not inherently waterproof. Without a continuous membrane beneath tile in wet zones — shower walls and floors in particular — moisture gradually penetrates to the structure behind, causing mould growth, timber rot, and tile delamination. Proper waterproofing is the foundation of every durable bathroom tile installation and the single most important step that is most frequently omitted in substandard work.</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span class="q-dot" aria-hidden="true">Q</span>
+              <span>What tile is best for bathroom floors and showers?</span>
+            </div>
+            <p class="faq-a">For floors, choose tile with a slip-resistance rating of R10 or higher for standard bathroom areas, and R11 or higher for wet-room and curbless shower floors. Porcelain is generally preferred over ceramic in wet areas for its lower porosity and greater durability. Large-format tiles reduce grout lines and are easier to maintain but require a precisely levelled substrate. Rectified tiles allow tighter, more refined grout joints for a cleaner finished appearance.</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span class="q-dot" aria-hidden="true">Q</span>
+              <span>Do I need a permit for a bathroom renovation?</span>
+            </div>
+            <p class="faq-a">Cosmetic updates — painting, replacing tile in the same location, swapping fixtures within existing rough-in positions — generally do not require permits in most jurisdictions. Any work involving moving or adding plumbing supply or drain lines, altering structural elements, or changing the room layout will typically require one or more permits. Always verify requirements with your local building authority before work begins.</p>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-q">
+              <span class="q-dot" aria-hidden="true">Q</span>
+              <span>How do I choose the right bathroom renovation contractor?</span>
+            </div>
+            <p class="faq-a">Obtain at least three written quotes that include a detailed scope of work. Verify that each contractor holds a current licence and appropriate insurance for renovation work in your jurisdiction. Request references from recent bathroom-specific projects and review photos of completed comparable work. Avoid contractors who request large upfront deposits before commencing or who are unwilling to provide a written contract specifying materials, timeline, and a clear payment schedule.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Conclusion ── -->
+      <section id="conclusion" aria-labelledby="h2-conclusion">
+        <div class="conclusion">
+          <h2 id="h2-conclusion">Conclusion</h2>
+          <p>A well-executed bathroom renovation is one of the most rewarding home improvement investments a homeowner can make. Whether you are repairing a structurally deteriorating space, correcting a layout that no longer serves your household, or designing a new retreat from scratch, the core principles remain consistent: plan carefully, prioritise waterproofing and structural integrity, allocate budget to the materials that receive the most daily use, and commit fully to a coherent design direction before demolition begins.</p>
+          <p>Modern bathroom renovation offers remarkable breadth — from natural stone tile and frameless glass showers to intelligent storage systems and layered architectural lighting. With thorough preparation, qualified tradespeople, and a clear vision of what you want to achieve, the result can genuinely transform how you experience your home every single day.</p>
+          <p><strong>Start with a clear brief, lock in your decisions before demolition, and leave room in the budget for what you cannot see yet.</strong></p>
+        </div>
+      </section>
+
+      <!-- ── Author Box ── -->
+      <div class="author" role="complementary" aria-label="About this guide">
+        <div class="author-av" aria-hidden="true">H</div>
+        <div>
+          <div class="author-tag">About This Guide</div>
+          <p>This article was created to help homeowners understand modern bathroom remodeling ideas, renovation planning strategies, waterproofing fundamentals, tile selection, and interior design inspiration. It is intended as an educational resource and does not constitute professional construction, plumbing, or legal advice. Always consult licensed contractors and your local building authority for guidance specific to your project and jurisdiction.</p>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 HomeRenovate Guide &nbsp;·&nbsp; Published for informational purposes only &nbsp;·&nbsp; <a href="#">Privacy</a> &nbsp;·&nbsp; <a href="#">Contact</a></p>
+  </footer>
+
+</body>
+</html>
